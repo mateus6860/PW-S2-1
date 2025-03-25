@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './App.css';
-import TodoListFilter from './components/TodoListFilter';
-import TodoList from './components/TodoList';
-import TodoForm from './components/TodoForm';
+import '../App.css';
+import TodoListFilter from '../components/TodoListFilter';
+import TodoList from '../components/TodoList';
+import TodoForm from '../components/TodoForm';
 
 function TodoApp() {
   const [tasks, setTasks] = useState([]);

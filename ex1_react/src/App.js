@@ -3,6 +3,9 @@ import './App.css';
 import TodoListFilter from './components/TodoListFilter';
 import TodoList from './components/TodoList';
 import TodoForm from './components/TodoForm';
+import AppMenu from './AppMenu';
+
+import { Link, BrowserRouter } from "react-router-dom"
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -62,6 +65,10 @@ function App() {
         <h1>Todo-List</h1>
         <h2>What needs to be done?</h2>
         <p>{tasks.filter(task => !task.completed).length} tasks remaining</p>
+
+        <BrowserRouter>
+        <AppMenu/>
+    </BrowserRouter>
 
         <TodoForm
           newTask={newTask}
