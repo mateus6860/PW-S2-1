@@ -1,0 +1,35 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 35rem;
+    text-align: center;
+    /* Ensures text is centered */
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.exercise-button {
+    font-family: "Source Code Pro", monospace;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: rgb(19, 19, 19);
+    color: rgb(231, 231, 231);
+    border: none;
+    outline: 2px solid white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.exercise-button:hover {
+    background-color: rgb(190, 190, 190);
+    color: black;
+}

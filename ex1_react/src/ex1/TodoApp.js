@@ -57,7 +57,7 @@ function TodoApp() {
   }
 
   return (
-    <div className="App">
+    <>
       <div className="TodoMatic">
         <h1>Todo-List</h1>
         <h2>What needs to be done?</h2>
@@ -82,7 +82,7 @@ function TodoApp() {
           updateTaskText={updateTaskText}
         />
       </div>
-    </div>
+    </>
   );
 }
 

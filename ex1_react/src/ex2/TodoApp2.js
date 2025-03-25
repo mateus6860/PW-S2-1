@@ -1,16 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../App.css';
 import TodoListFilter from '../components/TodoListFilter';
 import TodoList from '../components/TodoList';
 import TodoForm from '../components/TodoForm';
 
-function TodoApp() {
-  const [tasks, setTasks] = useState([]);
+function TodoApp2() {
+  // Load tasks from localStorage or use an empty array
+  const [tasks, setTasks] = useState(() => {
+    const savedTasks = localStorage.getItem("tasks");
+    return savedTasks ? JSON.parse(savedTasks) : [];
+  });
 
   const [newTask, setNewTask] = useState("");
   const [filter, setFilter] = useState("all");
   const [editingIndex, setEditingIndex] = useState(null);
   const [editText, setEditText] = useState("");
+
+  // Save tasks to localStorage whenever they change
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   function handleInputChange(event) {
     setNewTask(event.target.value);
@@ -57,8 +66,8 @@ function TodoApp() {
   }
 
   return (
-    <div className="App">
-      <div className="TodoMatic">
+    <div className="App2">
+      <div className="TodoMatic2">
         <h1>Todo-List</h1>
         <h2>What needs to be done?</h2>
         <p>{tasks.filter(task => !task.completed).length} tasks remaining</p>
@@ -86,4 +95,4 @@ function TodoApp() {
   );
 }
 
-export default TodoApp;
+export default TodoApp2;
