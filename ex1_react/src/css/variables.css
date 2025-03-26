@@ -1,0 +1,20 @@
+:root {
+    /* Black shades */
+    --black: #000000;
+    --black-light: #131313;
+
+    /* White shades */
+    --white: #e7e7e7;
+    --white-dark: #bebebe;
+    --white-darker: rgb(148, 148, 148);
+
+    /* Pink shades */
+    --pink-dark: #ba1b55;
+    --pink: #ff69a0;
+    --pink-light: #ffa9c9;
+
+    /* Green shades */
+    --green-dark: #23d59c;
+    --green: #69ffd0;
+    --green-light: #9effe0;
+}

@@ -7,8 +7,8 @@ export default function Home() {
 
   const exercises = [
     { id: 1, title: "TodoApp", path: "/ex1" },
-    { id: 2, title: "TodoAppLocalStorage", path: "/ex2" },
-    { id: 3, title: "TodoAppContador", path: "/ex3" },
+    { id: 2, title: "TodoAppContador", path: "/ex2" },
+    { id: 3, title: "Multibanco", path: "/ex3" },
   ];
 
   return (

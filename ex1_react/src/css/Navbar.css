@@ -1,11 +1,11 @@
 /* Navbar container */
 .navbar {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px;
-    background-color: rgb(19, 19, 19);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    background-color: var(--black-light);
     font-family: "Source Code Pro", monospace;
 }
 
@@ -34,15 +34,15 @@
 
 /* Neon hover effect */
 .nav-links a:hover {
-    color: #69ffd0;
-    text-shadow: 0 0 10px #69ffd0, 0 0 20px rgba(105, 255, 208, 0.8);
+    color: var(--green);
+    text-shadow: 0 0 10px var(--green-dark), 0 0 20px var(--green);
     transform: scale(1.1);
 }
 
 /* Active link */
 .nav-links a.active {
-    color: #ff69a0;
-    text-shadow: 0 0 10px #ff69a0, 0 0 20px rgba(255, 105, 160, 0.8);
+    color: var(--pink-light);
+    text-shadow: 0 0 10px var(--pink-dark), 0 0 20px var(--pink);
 }
 
 /* Responsive Design */

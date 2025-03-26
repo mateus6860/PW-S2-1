@@ -4,7 +4,7 @@ import TodoListFilter from '../components/TodoListFilter';
 import TodoList from '../components/TodoList';
 import TodoForm from '../components/TodoForm';
 
-function TodoApp2() {
+function TodoApp3() {
   // Load tasks from localStorage or use an empty array
   const [tasks, setTasks] = useState(() => {
     const savedTasks = localStorage.getItem("tasks");
@@ -70,7 +70,10 @@ function TodoApp2() {
       <div className="TodoMatic2">
         <h1>Todo-List</h1>
         <h2>What needs to be done?</h2>
-        <p>{tasks.filter(task => !task.completed).length} tasks remaining</p>
+        <p>
+          {tasks.filter(task => !task.completed).length} tasks remaining |{" "}
+          {tasks.filter(task => task.completed).length} tasks completed
+        </p>
 
         <TodoForm
           newTask={newTask}
@@ -95,4 +98,4 @@ function TodoApp2() {
   );
 }
 
-export default TodoApp2;
+export default TodoApp3;

@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(19, 19, 19);
+    background-color: var(--black-light);
     position: relative;
     font-family: "Source Code Pro", monospace;
 }
@@ -59,21 +59,28 @@ body::after {
     margin-top: 4rem;
 }
 
+.ATM {
+    font-family: "Source Code Pro", monospace;
+    text-align: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
 h1 {
     font-size: 4rem;
-    color: rgb(231, 231, 231);
+    color: var(--white);
 }
 
 h2 {
-    color: rgb(190, 190, 190);
+    color: var(--white-dark);
 }
 
 p {
-    color: rgb(148, 148, 148);
+    color: var(--white-darker);
 }
 
 label {
-    color: rgb(148, 148, 148);
+    color: var(--white-darker);
     font-size: 1.2rem;
 }
 
@@ -81,36 +88,36 @@ button {
     font-family: "Source Code Pro", monospace;
     font-size: 1rem;
     margin: 0.5rem;
-    background-color: rgb(19, 19, 19);
+    background-color: var(--black-light);
     border: none;
-    outline: 2px solid white;
+    outline: 2px solid var(--white);
     padding: 5px;
     cursor: pointer;
 }
 
 button:hover{
-    background-color: rgb(190, 190, 190);
-    color: black;
+    background-color: var(--white-dark);
+    color: var(--black);
 }
 
 .button-edit {
-    color: #69ffd0;
+    color: var(--green);
 }
 
 .button-delete {
-    color: #ff69a0;
+    color: var(--pink);
 }
 
 .button-add-task{
-    color: rgb(148, 148, 148);
+    color: var(--white-darker);
 }
 
 .filter-section button {
-    color: rgb(148, 148, 148);
+    color: var(--white-darker);
 }
 
 .filter-section button:hover {
-    color: black;
+    color: var(--black);
 }
 
 ol {
@@ -121,15 +128,15 @@ input[type="checkbox"] {
     width: 20px;
     height: 20px;
     cursor: pointer;
-    accent-color: #69ffd0;
+    accent-color: var(--green-light);
     margin-right: 10px;
 }
 
 .input-box {
-    background-color: black;
+    background-color: var(--black);
     border: none;
-    outline: 2px solid white;
-    color: white;
+    outline: 2px solid var(--white);
+    color: var(--white);
     margin-right: 5px;
     padding: 0.5rem;
 }
